@@ -30,5 +30,10 @@
 - digital is based on **discrete samples** and **finite alphabet/code**
 
 ## VOICE: PRESSURE / ACOUSTIC WAVES
-- microphone (analog): use diaphragm.
-- speaker (digital): reproduce mechanical sound
+- **microphone (analog)**: use diaphragm.
+- **speaker (digital)**: reproduce mechanical sound
+
+## DIGITAL: BREAKING INTO DISCRETE SAMPLES
+* telegraph: finite alphabets
+* Wi-Fi / Ethernet: bits
+* carrier-pigeon: pigeon(message with alphabets)
