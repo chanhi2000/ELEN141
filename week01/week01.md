@@ -214,12 +214,13 @@ $$
 $$
     \mathcal{F}\left\{x'(t)\right\}=j2\pi{f}X(f)
 $$
-* derivative **amplifies** frequency
+- derivative **amplifies** frequency
 
 #### 09. INTEGRATION
 $$
     \mathcal{F}\left\{\int_{-\infty}^{t}x(\tau)d\tau\right\}=\frac{X(f)}{j2\pi{f}}+\frac{1}{2}X(f)\delta(f)
 $$
+- integral **smooth down** frequency
 
 #### 10. CONVOLUTION
 $$
@@ -245,7 +246,7 @@ $$
 
 #### 12. RAYLEIGH'S THEOREM
 $$
-    \int_{-\infty}^{\infty}{x(t)y^*(t)dt}=\int_{-\infty}^{\infty}{X(f)Y^*(f)}
+    \int_{-\infty}^{\infty}{x(t)y^*(t)dt}\triangleq\int_{-\infty}^{\infty}{X(f)Y^*(f)df}
 $$
 * ###### PROOF
 
@@ -280,7 +281,7 @@ $$
     P&=V\cdot{I}\\&=I^2\cdot{R}\\&=\frac{V^2}{R}
     \end{align*}
 $$
-* The power per Ohm is $$I^2$$. when we talk about power, we are talking about a **squared term**. If we assume a **1 Ohm resistor as a reference**, then we can also include $$V^2$$, but we want to be aware of the reference to the resistance. In other words, $$P=V^2=I^2$$.
+- The power per Ohm is $$I^2$$. when we talk about power, we are talking about a **squared term**. If we assume a **1 Ohm resistor as a reference**, then we can also include $$V^2$$, but we want to be aware of the reference to the resistance. In other words, $$P=V^2=I^2$$.
 
 #### instantaneous POWER
 $$
@@ -295,8 +296,87 @@ $$
 $$
     E_x=\int_{-\infty}^{\infty}{p(t)dt}
 $$
-* some signals are called "**power**" signals $$(P_x>0)$$
-* some signals are called "**energy**" signals $$(E_x<\infty)$$
+- Some signals are called "**power**" signals $$(P_x>0)$$
+- Some signals are called "**energy**" signals $$(E_x<\infty)$$
 
 ###### EXAMPLE#1: P vs. E
+$$
+    x(t)=\cos{\left(2\pi{f_0}t\right)};
+$$
+- **instantaneous power**:
+$$
+    \begin{align*}
+    p(t)&=x^2(t)=\cos^{2}{\left(2\pi{f_0}t\right)}&&\left<\cos^2{\theta}=\frac{1}{2}\left(1+\cos{\left(2\theta\right)}\right)\right>\\
+    &=\frac{1}{2}\left(1+\cos{\left(2\pi(2){f_0}t\right)}\right)
+    
+    \end{align*}
+$$
 
+- **average power** :
+$$
+    \begin{align*}P_x&=\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}{p(t)dt}=\frac{1}{T}\left[\int_{-\frac{T}{2}}^{\frac{T}{2}}{\frac{1}{2}dt}+\int_{-\frac{T}{2}}^{\frac{T}{2}}{\frac{1}{2}{\cos{\left(2\pi2{f_0}t\right)}}dt}\right]\\
+    &=\frac{1}{T}\left[\left.\frac{1}{2}t\right|^{\frac{T}{2}}_{-\frac{T}{2}}+\left.\frac{1}{2}\frac{1}{2\pi2{f_0}}\sin{\left(2\pi2{f_0}t\right)}\right|_{-\frac{T}{2}}^{\frac{T}{2}}\right]\\
+    &=\frac{1}{T}\left[\frac{1}{2}\left(\underset{T}{\underline{\frac{T}{2}-\left(-\frac{T}{2}\right)}}\right)+\frac{1}{2\pi4{f_0}t}\left(\underset{0}{\underline{\sin{\left(2\pi2\left(\frac{T}{2}\right)t\right)}}}-\underset{0}{\underline{\sin{\left(2\pi2\left(-\frac{T}{2}\right)t\right)}}}\right)\right]\\
+    &=\frac{1}{2};
+    \end{align*}
+$$
+
+- **energy**
+$$
+    E_x=\int_{-\infty}^{\infty}{p(t)dt}=\infty
+$$
+- is it **power signal** or **energy signal**?
+$$
+    \therefore{x(t)}\text{ is power signal}\:\:\:\:\begin{cases}P_x>0\\E_x=\infty\end{cases}
+$$
+
+###### EXAMPLE#2: P vs. E
+$$
+    x(t)=\text{sinc}{(t)};
+$$
+
+- **instantaneous power**:
+$$
+    \begin{align*}
+    p(t)&=x^2(t)=\text{sinc}^{2}{(t)}\\
+    &=\frac{1}{2}\left(1+\cos{\left(2\pi(2){f_0}t\right)}\right)
+    
+    \end{align*}
+$$
+- **average power** :
+$$
+    \begin{align*}P_x&=\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}{p(t)dt}=\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}{\text{sinc}^2{(t)}dt}\\
+    &=\cdots=0;
+    \end{align*}
+$$
+
+- **energy**
+$$
+    \begin{align*}E_x&=\int_{-\infty}^{\infty}{p(t)dt}=\int_{-\infty}^{\infty}{\text{sinc}^2{(t)}dt}\\
+    &=\underset{Rayleigh}{\int_{-\infty}^{\infty}{\sqcap{(f)}\sqcap{(f)}df}}=\int_{-\infty}^{\infty}{\sqcap{(f)}df}\\
+    &=\cdots=1
+    \end{align*}
+$$
+- is it **power signal** or **energy signal**?
+$$
+    \therefore{x(t)}\text{ is energy signal}\:\:\:\:\begin{cases}P_x=0\\E_x<\infty\end{cases}
+$$
+
+## dB
+- dB is always referenced to power (given an amplitude of a signal)
+- *Communications people* use decibels all the time. **Why?** it's cool and also it's a way to measure signal strength, etc.
+
+$$
+    \begin{align*}
+    P_{\text{dB}}&=10\log_{10}{\left(A^2\right)}\\
+    &=20\log_{10}{\left(A\right)}
+    \end{align*}
+    
+$$
+- #### EXAMPLE: dB
+$$
+    \begin{align*}
+    V&=10\:\text{V};\\
+    P&=\left(V\right)^2=\left(10\right)^2=100\:
+    \end{align*}
+$$
