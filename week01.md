@@ -223,5 +223,80 @@ $$
 
 #### 10. CONVOLUTION
 $$
+    \mathcal{F}\left\{x(t)*h(t)\right\}=X(f)H(f)
+$$
+
+* ###### EXAMPLE
+$$
+    \begin{align*}
+    \text{sinc}{(t)}*\text{sinc}{(t)}&=\int_{-\infty}^{\infty}{\text{sinc}{(t-\tau)}\text{sinc}{(t)}d\tau}\\
+    &=\cdots\text{ugly}\\
+    \mathcal{F}\left\{\text{sinc}{(t)}*\text{sinc}{(t)}\right\}&=\sqcap{(f)}\sqcap{(f)}=\sqcap{(f)}\\
+    \mathcal{F}^{-1}\left\{\mathcal{F}\left\{\text{sinc}(t)*\text{sinc}(t)\right\}\right\}&=\mathcal{F}^{-1}\left\{\sqcap{(f)}\right\}\\
+    &=\text{sinc}{(t)}
+    \end{align*}
+$$
+
+
+#### 11. MULTIPLICATION
+$$
+    \mathcal{F}\left\{x(t)h(t)\right\}=X(f)*H(f)
+$$
+
+#### 12. RAYLEIGH'S THEOREM
+$$
+    \int_{-\infty}^{\infty}{x(t)y^*(t)dt}=\int_{-\infty}^{\infty}{X(f)Y^*(f)}
+$$
+* ###### PROOF
 
 $$
+    \begin{align*}
+    \int_{-\infty}^{\infty}{x(t)y^*(t)dt}&=\int_{-\infty}^{\infty}{\int_{-\infty}^{\infty}{X(f)e^{j2\pi(f)t}dt}\int_{-\infty}^{\infty}{Y^*(\lambda)e^{-j2\pi(f)\lambda{t}}d\lambda\:dt}}\\
+    &=\int_{-\infty}^{\infty}{\int_{-\infty}^{\infty}{X(f)Y^*(\lambda)}\int_{-\infty}^{\infty}{e^{j2\pi(f-\lambda)t}dt}}\\
+    &=\int_{-\infty}^{\infty}{\int_{-\infty}^{\infty}{X(f)Y^*(\lambda)\delta(f-\lambda)df\:d\lambda}}\\
+    &=\int_{-\infty}^{\infty}{X(f)Y^*(f)};
+    \end{align*}
+$$
+
+* ###### EXAMPLE
+
+$$
+    \int_{-\infty}^{\infty}{\text{sinc}^2{(t)}dt}=\int_{-\infty}^{\infty}{\sqcap(f)\underset{=\sqcap^*(f)}{\underline{\sqcap(f)}}df}=1
+$$
+
+## TIME-AVERAGE AUTO CORRELATION
+$$
+    R(\tau)=\lim_{T\to\infty}{\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}{x(t)x(t+\tau)dt}}
+$$
+$$
+    \begin{align*}
+    R(0)&=\lim_{T\to\infty}{\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}{x(t)x(t)dt}}=\underset{\text{average power}}{\underline{\lim_{T\to\infty}{\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}{\left|x(t)\right|^2dt}}}}\end{align*}
+$$
+
+## POWER VS. ENERGY
+#### POWER
+$$
+    \begin{align*}
+    P&=V\cdot{I}\\&=I^2\cdot{R}\\&=\frac{V^2}{R}
+    \end{align*}
+$$
+* The power per Ohm is $$I^2$$. when we talk about power, we are talking about a **squared term**. If we assume a **1 Ohm resistor as a reference**, then we can also include $$V^2$$, but we want to be aware of the reference to the resistance. In other words, $$P=V^2=I^2$$.
+
+#### instantaneous POWER
+$$
+    p(t)=x^2(t)
+$$
+
+#### average POWER
+$$
+    P_x=\lim_{T\to\infty}\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}{p(t)dt}
+$$
+#### ENERGY
+$$
+    E_x=\int_{-\infty}^{\infty}{p(t)dt}
+$$
+* some signals are called "**power**" signals $$(P_x>0)$$
+* some signals are called "**energy**" signals $$(E_x<\infty)$$
+
+###### EXAMPLE#1: P vs. E
+
