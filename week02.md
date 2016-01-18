@@ -35,7 +35,7 @@ $$
 - #### energy SPECTRAL DENSITY
 $$
     \begin{align*}
-    \underset{\text{e.s.d. of }x(t)}{G_x(f)}&=\left|X(f)\right|^2&&\left[\text{A}^2\cdot\text{s}^2=\text{J}\cdot\text{s}=\frac{\text{J}}{\text{Hz}}\right]\\
+    \underset{\text{e.s.d. of }x(t)}{G_x(f)}&=\left|X(f)\right|^2\\
     E_x&=\int_{-\infty}^{\infty}{G_x(f)df}\\
     &=\int_{-\infty}^{\infty}{\left|X(f)\right|^2df}\underset{\text{Rayleigh}}{=}\int_{-\infty}^{\infty}{\left|x(t)\right|^2dt}
     \end{align*}
@@ -47,7 +47,7 @@ $$
     \underset{\text{p.s.d. of }x(t)}{S_x(f)}&=\mathcal{F}{\left\{R_x(\tau)\right\}}\propto\left|X(f)\right|^2\\
 
     P_x&=\int_{-\infty}^{\infty}{S_x(f)df}\\
-    &=\int_{-\infty}^{\infty}{\left|X(f)\right|^2df}=\lim_{T\to\infty}{\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}{\left|x(t)\right|^2dt}}
+    &=R_x(0)=\lim_{T\to\infty}{\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}{\left|x(t)\right|^2dt}}
     \end{align*}
 $$
 ???
@@ -66,5 +66,25 @@ $$
 $$
 
 ## BANDWIDTH
-- $$W$$: one-sided bandwidth
-- $$B$$: two-sided bandwidth
+- #### TERMINOLOGY
+    - $$W$$: one-sided bandwidth
+    - $$B$$: two-sided bandwidth
+- #### $$X_{dB}$$ Bandwidth
+    - Find $$W$$ such that $$\forall{f}>W$$,
+    $$
+        \begin{align*}
+        G_x(f)&\leq\frac{\text{max}{\left(G_x(f)\right)}}{10^{\frac{x}{10}}};&&\text{or}\\\\
+        S_x(f)&\leq\frac{\text{max}{\left(S_x(f)\right)}}{10^{\frac{x}{10}}};
+        \end{align*}
+    $$
+- #### $$X\%$$ Bandwidth
+    - Find $$W$$ such that $$\forall{f}$$,
+    $$
+        \begin{align*}
+        \frac{\int_{-W}^{W}{S_x(f)df}}{\int_{-\infty}^{\infty}{S_x(f)df}}&=\frac{X}{100};&&\text{or}\\\\
+        \frac{\int_{-W}^{W}{G_x(f)df}}{\int_{-\infty}^{\infty}{G_x(f)df}}&=\frac{X}{100};
+        \end{align*}
+    $$
+    
+## BASEBAND VS. PASSBAND
+
