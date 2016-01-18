@@ -363,7 +363,7 @@ $$
 $$
 
 ## dB
-- dB is always referenced to power (given an amplitude of a signal)
+- dB is **always** referenced to power (given an amplitude of a signal)
 - *Communications people* use decibels all the time. **Why?** it's cool and also it's a way to measure signal strength, etc.
 
 $$
@@ -373,10 +373,53 @@ $$
     \end{align*}
     
 $$
-- #### EXAMPLE: dB
+- ###### EXAMPLE: dB
 $$
     \begin{align*}
     V&=10\:\text{V};\\
     P&=\left(V\right)^2=\left(10\right)^2=100\:
+    \end{align*}
+$$
+- ###### EASY dB TABLE
+ 
+| $$A^2$$ | dB |
+| ------- | -- |
+| 1       | 0  |
+| 2       | 3  |
+| 3       | -  |
+| 4       | 6  |
+| 5       | 7  |
+| 6       | -  |
+| 7       | -  |
+| 8       | 9  |
+| 9       | -  |
+| 10      | 10 |
+
+## FOURIER SERIES
+- Given $$x(t)$$ which is periodic over some period T, we can approximate it as,
+$$
+    \begin{align*}
+    x(t)&=\sum_{k=-\infty}^{\infty}{X_ke^{\frac{j2\pi{k}t}{T}}},\\
+    X_k&=\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}{x(t)e^{-\frac{j2\pi{k}t}{T}}dt}\\
+    &=\left.\mathcal{F}{\left\{\sqcap{\left(\frac{t}{T}\right)}x(t)\right\}}\right|_{f=\frac{k}{T}}
+    \end{align*}
+$$
+- ###### EXAMPLE#1: FOURIER SERIES
+- given the followings:
+$$
+    \begin{align*}
+    T&=2;\\
+    x(t)&=\sum_{n=-\infty}^{\infty}{\wedge{\left(t-2n\right)}};&&\left<\underset{\text{triangle function}}{\wedge{(t)}}=\begin{cases}1+t,&t\in\left[-1,0\right]\\1-t,&t\in\left[0,1\right]\\0,&\text{otherwise}\end{cases}\right>;
+    \end{align*}
+$$
+find the Fourier series of such signal.
+$$
+    \begin{align*}
+    X_n&=\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}{x(t)e^{-\frac{j2\pi{n}t}{T}}dt}=\frac{1}{(2)}\int_{-\frac{(2)}{2}}^{\frac{(2)}{2}}{x(t)e^{-\frac{j2\pi{n}t}{T}}dt}\\
+    &=\frac{1}{2}\int_{-\infty}^{\infty}{x(t)e^{-\frac{j2\pi{n}t}{T}}dt}=\left.\frac{1}{2}\mathcal{F}{\left\{\wedge{(t)}\right\}}\right|_{f=\frac{n}{2}}&&\left<\sqcap{(t)}*\sqcap{(t)}=\wedge{(t)}\right>\\
+    &=\left.\frac{1}{2}\mathcal{F}{\left\{\sqcap{(t)}*\sqcap{(t)}\right\}}\right|_{f=\frac{n}{2}}=\left.\frac{1}{2}\text{sinc}^2{\left(f\right)}\right|_{f=\frac{n}{2}}&&\left<\mathcal{F}{\left\{\sqcap{(t)}*\sqcap{(t)}\right\}}=\text{sinc}{(f)}\text{sinc}{(f)}\right>\\
+    &=\frac{1}{2}\text{sinc}^2{\left(\frac{n}{2}\right)};\\\\
+    x(t)&=\sum_{k=-\infty}^{\infty}{X_ke^{\frac{j2\pi{k}t}{T}}}=\sum_{k=-\infty}^{\infty}{\left(\frac{1}{2}\text{sinc}^2{\left(\frac{k}{2}\right)}\right)e^{\frac{j2\pi{k}t}{T}}}\\
+    &=\frac{1}{2}+\frac{1}{2}
     \end{align*}
 $$
