@@ -404,7 +404,7 @@ $$
     &=\left.\mathcal{F}{\left\{\sqcap{\left(\frac{t}{T}\right)}x(t)\right\}}\right|_{f=\frac{k}{T}}
     \end{align*}
 $$
-- ###### EXAMPLE#1: FOURIER SERIES
+###### EXAMPLE#1: FOURIER SERIES
 - given the followings:
 $$
     \begin{align*}
@@ -420,6 +420,28 @@ $$
     &=\left.\frac{1}{2}\mathcal{F}{\left\{\sqcap{(t)}*\sqcap{(t)}\right\}}\right|_{f=\frac{n}{2}}=\left.\frac{1}{2}\text{sinc}^2{\left(f\right)}\right|_{f=\frac{n}{2}}&&\left<\mathcal{F}{\left\{\sqcap{(t)}*\sqcap{(t)}\right\}}=\text{sinc}{(f)}\text{sinc}{(f)}\right>\\
     &=\frac{1}{2}\text{sinc}^2{\left(\frac{n}{2}\right)};\\\\
     x(t)&=\sum_{k=-\infty}^{\infty}{X_ke^{\frac{j2\pi{k}t}{T}}}=\sum_{k=-\infty}^{\infty}{\left(\frac{1}{2}\text{sinc}^2{\left(\frac{k}{2}\right)}\right)e^{\frac{j2\pi{k}t}{T}}}\\
-    &=\frac{1}{2}+\frac{1}{2}
+    &=\underset{k=0}{\frac{1}{2}}+\frac{1}{2}\left[\sum_{k=1}^{\infty}{\text{sinc}^2{\left(\frac{k}{2}\right)}\left(e^{\frac{j2\pi{k}t}{T}}+e^{-\frac{j2\pi{k}t}{T}}\right)}\right]&&\left<\cos{\left(\theta\right)=\frac{e^{j\theta}+e^{-j\theta}}{2}}\right>\\
+    &=\frac{1}{2}+\sum_{k=1}^{\infty}{\text{sinc}^2{\left(\frac{k}{2}\right)}\left(\cos{\left(\frac{2\pi(k)t}{2}\right)}\right)}
     \end{align*}
+$$
+
+###### EXAMPLE#2: FOURIER SERIES
+- given the followings:
+$$
+    \begin{align*}
+    T&=2;\\
+    x(t)&=\sum_{n=-\infty}^{\infty}{(-1)^{k}\sqcap{\left(t-k\right)}};
+    \end{align*}
+$$
+find the Fourier series of such signal.
+$$
+    \begin{align*}    
+    X_n&=\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}{x(t)e^{-\frac{j2\pi{n}t}{T}}dt}=\frac{1}{(2)}\int_{-\frac{(2)}{2}}^{\frac{(2)}{2}}{\sqcap{(t)}e^{-\frac{j2\pi{n}t}{(2)}}dt}??
+    \end{align*}
+$$
+- *ask questions to professor on proof*.
+---------------
+- in general
+$$
+    x(t)=A_0+\sum_{k=1}^{\infty}{A_k\cos{\left(2\pi{k}f_0+\theta_k\right)}}
 $$
