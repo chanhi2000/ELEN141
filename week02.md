@@ -17,6 +17,7 @@ $$
 $$
     
 $$
+
 ## SPECTRAL DENSITY
 - #### time-average power correlation
 $$
