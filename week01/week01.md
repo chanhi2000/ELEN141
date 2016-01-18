@@ -443,5 +443,7 @@ $$
 ---------------
 - in general
 $$
-    x(t)=A_0+\sum_{k=1}^{\infty}{A_k\cos{\left(2\pi{k}f_0+\theta_k\right)}}
+    \begin{align*}
+    x(t)&=A_0+\sum_{k=1}^{\infty}{A_k\cos{\left(2\pi{k}f_0+\theta_k\right)}}&&\begin{cases}f_0:&\text{fundamental frequency}\\(2)f_0,\:(3)f_0:&\text{harmonics}\\A_k:&\text{amplitude}\\\theta_k:&\text{phase}\end{cases}
+    \end{align*}
 $$
