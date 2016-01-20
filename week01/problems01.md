@@ -2,7 +2,7 @@
 
 **2.1** Let two complex numbers be given as 
 $$
-    \begin{align*}
+\begin{align*}
     z_&1=x_1+jy_1=\alpha_1\exp{\left(j\theta_1\right)};\\
     z_2&=x_2+jy_2=\alpha_2\exp{\left(j\theta_2\right)};
 \end{align*}
