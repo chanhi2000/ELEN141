@@ -54,6 +54,7 @@ $$
     y(t)=a_x(t)+a_3x^3(t)
 $$
 Give the system output, z(t), as a function of $$a_1$$, $$a_3$$, $$b_1$$, and $$b_3$$. 
+
 ![figure](week01/img/[ELEN141]hw01-figure01.png)
  
 
