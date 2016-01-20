@@ -43,8 +43,25 @@ $$
 $$
     \begin{align*}
     \Im{\left[z_1z_2\right]}&=\Im{\left[(x_1+jy_1)(x_2+jy_2)\right]}=\Im{\left[x_1x_2-y_1y_2+j\left(x_1y_2+x_2y_1\right)\right]}\\
-    &x_1y_2+x_2y_1;
-    \Im{\left[z_1z_2\right]}&=\Im{\left[\alpha_1\alpha_2\exp^{j\left(\theta_1+\theta_2\right)}\right]}
+    &=x_1y_2+x_2y_1;\\
+    \Im{\left[z_1z_2\right]}&=\Im{\left[\alpha_1\alpha_2e^{j\left(\theta_1+\theta_2\right)}\right]}=\Im{\left[\alpha_1\alpha_2\cos{(\theta_1+\theta_2)}+j\left(\alpha_1\alpha_2\sin{(\theta_1+\theta_2)}\right)\right]}\\
+    &=\alpha_1\alpha_2\sin{(\theta_1+\theta_2)};
+    \end{align*}
+$$
+
+#### 2.1.4
+$$
+    \arg{\left[z_1z_2\right]}=\arg{\left[\alpha_1\alpha_2e^{j\left(\theta_1+\theta_2\right)}\right]}=\theta_1+\theta_2
+$$
+
+#### 2.1.5
+$$
+    \begin{align*}
+    \left|z_1z_2\right|&=\left|(x_1+jy_1)(x_2+jy_2)\right|=\left|\left(x_1x_2-y_1y_2\right)+j\left(x_1y_2+x_2y_1\right)\right|\\
+    &=\sqrt{\left(x_1x_2-y_1y_2\right)^2+\left(x_1y_2+x_2y_1\right)^2}\\
+    &=\sqrt{x_1^2x_2^2+y_1^2y_2^2-2x_1x_2y_1y_2+x_1^2y_2^2+x_1^2y_2^2+2x_1x_2y_1y_2}\\
+    &=\sqrt{x_1^2x_2^2+y_1^2y_2^2+x_1^2y_2^2+x_1^2y_2^2}=\sqrt{(x_1^2+y_1^2)(x_2^2+y_2^2)}\\
+    \left|z_1z_2\right|&=\left|\alpha_1\alpha_2e^{j(\theta_1+\theta_2)}\right|=\alpha_1\alpha_2;
     \end{align*}
 $$
 
@@ -56,11 +73,55 @@ $$
     x_2(t)=m(t)\sin(2\pi{f_c}t)
     \end{align*}
 $$
+
 where the bandwidth of m(t) is much less than fc. Compute the simplest form for the following four signals 
 1. $$y_1(t)=x_1(t)\cos(2\pi{f_c}t)$$
 2. $$y_2(t)=x_1(t)\sin(2\pi{f_c}t)$$
 3. $$y_3(t)=x_2(t)\cos(2\pi{f_c}t)$$
 4. $$y_4(t)=x_2(t)\sin(2\pi{f_c}t)$$
+
+#### 2.3.1.
+$$
+    \begin{align*}
+    y_1(t)&=x_1(t)\cos(2\pi{f_c}t)\\
+    &=\left(m(t)\cos{(2\pi{f_c}t)}\right)\cos{(2\pi{f_c}t)}\\
+    &=m(t)\cos^2{(2\pi{f_c}t)},&&\left<\cos^2{(\theta)}=\frac{1}{2}\left[1+\cos{(2\theta)}\right]\right>\\
+    &=m(t)\left(\frac{1}{2}\left[1+\cos{(2\pi(2){f_c}t)}\right]\right)\\
+    &=\frac{1}{2}m(t)+\frac{1}{2}m(t)\cos{(2\pi2f_ct)}
+    \end{align*}
+$$
+
+#### 2.3.2
+$$
+    \begin{align*}
+    y_2(t)&=x_1(t)\sin(2\pi{f_c}t)\\
+    &=\left(m(t)\cos{(2\pi{f_c}t)}\right)\sin{(2\pi{f_c}t)}&&\left<\sin{(2\theta)}=2\cos{(\theta)}\sin{(\theta)}\right>\\
+    &=m(t)\left(\frac{1}{2}\left[\sin{(2\pi(2){f_c}t)}\right]\right)\\
+    &=\frac{1}{2}m(t)\sin{(2\pi2f_ct)}
+    \end{align*}
+$$
+
+#### 2.3.3
+$$
+    \begin{align*}
+    y_3(t)&=x_2(t)\cos(2\pi{f_c}t)\\
+    &=\left(m(t)\sin{(2\pi{f_c}t)}\right)\cos{(2\pi{f_c}t)}&&\left<\sin{(2\theta)}=2\cos{(\theta)}\sin{(\theta)}\right>\\
+    &=m(t)\left(\frac{1}{2}\left[\sin{(2\pi(2){f_c}t)}\right]\right)\\
+    &=\frac{1}{2}m(t)\sin{(2\pi2f_ct)}
+    \end{align*}
+$$
+
+
+#### 2.3.4
+$$
+    \begin{align*}
+    y_4(t)&=x_2(t)\sin(2\pi{f_c}t)\\
+    &=\left(m(t)\sin{(2\pi{f_c}t)}\right)\sin{(2\pi{f_c}t)}\\
+    &=m(t)\sin^2{(2\pi{f_c}t)},&&\left<\sin^2{(\theta)}=\frac{1}{2}\left[1-\cos{(2\theta)}\right]\right>\\
+    &=m(t)\left(\frac{1}{2}\left[1-\cos{(2\pi(2){f_c}t)}\right]\right)\\
+    &=\frac{1}{2}m(t)-\frac{1}{2}m(t)\cos{(2\pi2f_ct)}
+    \end{align*}
+$$
 
 
 ##**2.5**
@@ -70,6 +131,15 @@ $$
 $$
 and give the value of A such that $$E_u=1.$$ Compute the 40-dB relative bandwidth,$$B_{40}$$, of each signal. 
 
+
+#### 2.5
+
+Let $$x(t)=A\sqcap{\left(\frac{t-\frac{T_p}{2}}{T_p}\right)}$$
+Then,
+$$
+    X(f)=\mathcal{F}{\left\{x(t)\right\}}=\mathcal{F}{\left\{A\sqcap{\left(\frac{t-\frac{T_p}{2}}{T_p}\right)}\right\}}\\
+    &=
+$$
 
 ##**2.7**
 This problem uses signal and system theory to compute the output of a simple memoryless nonlinearity. An amplifier is an often used device in communication systems and is simply modeled as an ideal memoryless system, i.e., 
