@@ -137,8 +137,34 @@ and give the value of A such that $$E_u=1.$$ Compute the 40-dB relative bandwidt
 Let $$x(t)=A\sqcap{\left(\frac{t-\frac{T_p}{2}}{T_p}\right)}$$
 Then,
 $$
-    X(f)=\mathcal{F}{\left\{x(t)\right\}}=\mathcal{F}{\left\{A\sqcap{\left(\frac{t-\frac{T_p}{2}}{T_p}\right)}\right\}}\\
-    &=
+    \begin{align*}
+    X(f)&=\mathcal{F}{\left\{x(t)\right\}}=\mathcal{F}{\left\{A\sqcap{\left(\frac{t-\frac{T_p}{2}}{T_p}\right)}\right\}},&&\left<\mathcal{F}{\left\{\sqcap{(t)}\right\}}=\text{sinc}{(f)}\right>\\
+    &=A\frac{1}{\left|\frac{1}{T_p}\right|}\text{sinc}{\left(\frac{f}{\left|\frac{1}{T_p}\right|}\right)}e^{-j\left(2\pi{f}\left(\frac{T_p}{2}\right)\right)}\\
+    &=T_pA\:\text{sinc}{(T_pf)}\:e^{-j\left(2\pi{f}\left(\frac{T_p}{2}\right)\right)}\\
+    G_x(f)&=\left|X(f)\right|^2=(T_P)^2(A)^2\text{sinc}^2{(T_pf)};
+    \end{align*}
+$$
+When $$E_u=1$$, we want 
+$$\int{x^2(t)dt}=1$$. It means
+$$
+    \begin{align*}
+    (T_p)^2(A^2)=1;\\
+    A=\sqrt{\frac{1}{T_p}};
+    \end{align*}
+$$
+So
+$$
+    \begin{align*}
+    G_x(f)&=(T_P)^2\left(\sqrt{\frac{1}{T_p}}\right)^2\text{sinc}^2{(T_pf)}\\
+    &=T_p\text{sinc}^2{(T_pf)};
+    \end{align*}
+$$
+
+Find $$W$$ such that,
+$$
+    \begin{align*}
+    \left.G(f)\leq{\frac{T_p}{10^{\frac{X}{10}}}}\right|_{X=40}&&\forall{f}\geq{W}
+    \end{align*}
 $$
 
 ##**2.7**
