@@ -16,6 +16,37 @@ Find
 4. $$\arg{\left[z_1z_2\right]}$$
 5. $$\left|z_1z_2\right|$$
 
+#### 2.1.1
+$$
+    \begin{align*}
+    \Re{\left[z_1+z_2\right]}&=\Re{\left[x_1+jy_1\right]}+\Re{\left[x_2+jy_2\right]}\\
+    &=x_1+x_2\\
+    \Re{\left[z_1+z_2\right]}&=\Re{\left[\alpha_1\cos{(\theta_1)+j\left(\alpha_1\sin{(\theta_1)}\right)}\right]}+\Re{\left[\alpha_2\cos{(\theta_2)+j\left(\alpha_2\sin{(\theta_2)}\right)}\right]}\\
+    &=\alpha_1\cos{(\theta_1)}+\alpha_2\cos{(\theta_2)}
+    \end{align*}
+$$
+#### 2.1.2
+$$
+    \begin{align*}
+    \left|z_1+z_2\right|&=\left|\left((x_1+x_2)+j(y_1+y_2)\right)\right|=\sqrt{(x_1+x_2)^2+(y_1+y_2)^2}\\
+    &=\sqrt{x_1^2+x_2^2+2x_1x_2+2y_1y_2};\\
+    \left|z_1+z_2\right|&=\left|\left(\alpha_1\cos{(\theta_1)}+\alpha_2\cos{(\theta_2)}\right)+j\left(\alpha_1\sin{(\theta_1)}+\alpha_2\sin{(\theta_2)}\right)\right|\\
+    &=\sqrt{\left(\alpha_1\cos{(\theta_1)}+\alpha_2\cos{(\theta_2)}\right)^2+\left(\alpha_1\sin{(\theta_1)}+\alpha_2\sin{(\theta_2)}\right)^2}\\
+    &=\sqrt{\alpha_1^2\cos^2{(\theta_1)}+\alpha_1^2\sin^2{(\theta_1)}+\alpha_2^2\cos^2{(\theta_2)}+\alpha_2^2\sin^2{(\theta_2)}+2\alpha_1\alpha_2\cos{(\theta_1)}\cos{(\theta_2)}+2\alpha_1\alpha_2\sin{(\theta_1)}\sin{(\theta_2)}}\\
+    &=\sqrt{\alpha_1^2+\alpha_2^2+2\alpha_1\alpha_2\cos{(\theta_1)}\cos{(\theta_2)}+2\alpha_1\alpha_2\sin{(\theta_1)}\sin{(\theta_2)}},&&\left<\cos{(a)}\cos{(b)}=\frac{1}{2}\left(\cos{(a-b)}+\cos{(a+b)}\right)\right>\\
+    &=\sqrt{\alpha_1^2+\alpha_2^2+2\alpha_1\alpha_2\left(\frac{1}{2}\left[\cos{(\theta_1-\theta_2)}+\cos{(\theta_1+\theta_2)}\right]\right)+2\alpha_1\alpha_2\left(\frac{1}{2}\left[\cos{(\theta_1-\theta_2)}-\cos{(\theta_1+\theta_2)}\right]\right)},&&\left<\sin{(a)}\sin{(b)}=\frac{1}{2}\left(\cos{(a-b)}-\cos{(a+b)}\right)\right>\\
+    &=\sqrt{\alpha_1^2+\alpha_2^2+2\alpha_1\alpha_2\cos{(\theta_1-\theta_2)}}
+    \end{align*}
+$$
+
+#### 2.1.3
+$$
+    \begin{align*}
+    \Im{\left[z_1z_2\right]}&=\Im{\left[(x_1+jy_1)(x_2+jy_2)\right]}=\Im{\left[x_1x_2-y_1y_2+j\left(x_1y_2+x_2y_1\right)\right]}\\
+    &x_1y_2+x_2y_1;
+    \Im{\left[z_1z_2\right]}&=\Im{\left[\alpha_1\alpha_2\exp^{j\left(\theta_1+\theta_2\right)}\right]}
+    \end{align*}
+$$
 
 ##**2.3**
 Consider the two signals
@@ -53,9 +84,9 @@ the ideal bandpass filter has a bandwidth of 10 kHz centered at 100 kHz, and the
 $$
     y(t)=a_x(t)+a_3x^3(t)
 $$
-Give the system output, z(t), as a function of $$a_1$$, $$a_3$$, $$b_1$$, and $$b_3$$. 
+Give the system output, $$z(t)$$, as a function of $$a_1$$, $$a_3$$, $$b_1$$, and $$b_3$$. 
 
-![figure](week01/img/[ELEN141]hw01-figure01.png)
+![figure](img/[ELEN141]hw01-figure01.png)
  
 
 
