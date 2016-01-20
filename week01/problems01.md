@@ -209,8 +209,8 @@ $$
     x(t)&=\left(\sqrt{\frac{2}{T_p}}\right)\sin{\left(\frac{\pi{t}}{T_p}\right)}\sqcap{\left(\frac{t-\frac{T_p}{2}}{T_p}\right)},&&\left<\sin{(\theta)}=\cos{(\theta-\frac{\pi}{2})}\right>\\
     &=\left(\sqrt{\frac{2}{T_p}}\right)\cos{\left(\frac{\pi{\left(t-\frac{T_p}{2}\right)}}{T_p}\right)}\sqcap{\left(\frac{t-\frac{T_p}{2}}{T_p}\right)}\\
     X(f)&=\mathcal{F}{\left\{x(t)\right\}}=\mathcal{F}{\left\{\left(\sqrt{\frac{2}{T_p}}\right)\cos{\left(\frac{\pi{t}}{T_p}\right)}\sqcap{\left(\frac{t}{T_p}\right)}\right\}},&&\left<\mathcal{F}{\left\{\cos{\left(\frac{\pi{t}}{T_p}\right)}\sqcap{\left(\frac{t}{T_p}\right)}\right\}}=\frac{T_p}{2}\left[\text{sinc}{\left({T_p}\left(f-\frac{1}{2T_p}\right)\right)}+\text{sinc}{\left({T_p}\left(f+\frac{1}{2T_p}\right)\right)}\right]\right>\\
-    &=\sqrt{\frac{2}{T_p}}\left(\frac{T_p}{2}\right)\left[\text{sinc}{\left({T_p}\left(f-\frac{1}{2T_p}\right)\right)}+\text{sinc}{\left({T_p}\left(f+\frac{1}{2T_p}\right)\right)}\right]e^{-j2\pi\left(\frac{T_p}{2}f\right)}\\
-    &=\sqrt{\frac{T_p}{2}}\left[\underline{\text{sinc}{\left({T_p}\left(f-\frac{1}{2T_p}\right)\right)}}+\underline{\text{sinc}{\left({T_p}\left(f+\frac{1}{2T_p}\right)\right)}}\right]e^{-j2\pi\left(\frac{T_p}{2}f\right)}\\
+    &=\sqrt{\frac{2}{T_p}}\left(\frac{T_p}{2}\right)\left[\text{sinc}{\left({T_p}\left(f-\frac{1}{2T_p}\right)\right)}+\text{sinc}{\left({T_p}\left(f+\frac{1}{2T_p}\right)\right)}\right]e^{-j2\pi\left(\frac{T_p}{2}\right)f}\\
+    &=\sqrt{\frac{T_p}{2}}\left[\underline{\text{sinc}{\left({T_p}\left(f-\frac{1}{2T_p}\right)\right)}}+\underline{\text{sinc}{\left({T_p}\left(f+\frac{1}{2T_p}\right)\right)}}\right]e^{-j2\pi\left(\frac{T_p}{2}\right)f}\\
     &=\cdots
     \end{align*}
     
@@ -227,9 +227,9 @@ $$
 Back to $$X(f)$$
 $$
     \begin{align*}
-    X(f)&=\cdots=\sqrt{\frac{T_p}{2}}\left[\left(2\frac{\cos{\left(\pi{T_p}f\right)}}{\pi\left(2T_p{f}+1\right)}\right)+\left(-2\frac{\cos{\left(\pi{T_p}f\right)}}{\pi\left(2T_p{f}-1\right)}\right)\right]e^{-j2\pi\left(\frac{T_p}{2}f\right)}e^{-j2\pi\left(\frac{T_p}{2}\right)f}\\
+    X(f)&=\cdots=\sqrt{\frac{T_p}{2}}\left[\left(2\frac{\cos{\left(\pi{T_p}f\right)}}{\pi\left(2T_p{f}+1\right)}\right)+\left(-2\frac{\cos{\left(\pi{T_p}f\right)}}{\pi\left(2T_p{f}-1\right)}\right)\right]e^{-j2\pi\left(\frac{T_p}{2}\right)f}\\
     &=\left(\frac{2}{\pi}\right)\sqrt{\frac{T_p}{2}}\cos{(\pi{T_p}f)}\left[\frac{1}{2T_p{f}+1}-\frac{1}{2T_p{f}-1}\right]e^{-j2\pi\left(\frac{T_p}{2}\right)f}\\
-    &=\left(\frac{2}{\pi}\right)\sqrt{\frac{T_p}{2}}\cos{(\pi{T_p}f)}\left[\frac{(2T_p{f}-1)-(2T_p{f}+1)}{(2T_p{f}+1)(2T_p{f}-1)}\right]e^{-j2\pi\left(\frac{T_p}{2}f\right)}\\
+    &=\left(\frac{2}{\pi}\right)\sqrt{\frac{T_p}{2}}\cos{(\pi{T_p}f)}\left[\frac{(2T_p{f}-1)-(2T_p{f}+1)}{(2T_p{f}+1)(2T_p{f}-1)}\right]e^{-j2\pi\left(\frac{T_p}{2}\right)f}\\
     &=\left(\frac{2}{\pi}\right)\sqrt{\frac{T_p}{2}}\cos{(\pi{T_p}f)}\left[\frac{(-2)}{(2T_p{f})^2-1}\right]e^{-j2\pi\left(\frac{T_p}{2}\right)f}
     &=\left(\frac{2}{\pi}\right)\sqrt{\frac{T_p}{2}}\cos{(\pi{T_p}f)}\left[\frac{(2)}{(1-2T_p{f})^2}\right]e^{-j2\pi\left(\frac{T_p}{2}\right)f}
     \end{align*}
