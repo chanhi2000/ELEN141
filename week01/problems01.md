@@ -232,6 +232,8 @@ $$
     &=\left(\frac{2}{\pi}\right)\sqrt{\frac{T_p}{2}}\cos{(\pi{T_p}f)}\left[\frac{(2)}{(1-2T_p{f})^2}\right]e^{-j2\pi\left(\frac{T_p}{2}\right)f}
     \end{align*}
 $$
+
+
 ##**2.7**
 This problem uses signal and system theory to compute the output of a simple memoryless nonlinearity. An amplifier is an often used device in communication systems and is simply modeled as an ideal memoryless system, i.e., 
 $$
