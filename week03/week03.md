@@ -2,14 +2,14 @@
 
 ## LAST TIME
 - #### MODULATIONS
-    - ###### double-side band modulation (DSB)
+    - ###### DOUBLE-SIDE BAND modulation (DSB)
     $$
     \begin{align*}
     \underset{\text{baseband}}{x_z(t)}&=Am(t)\\
     x_c(t)&=A\sqrt{2}m(t)\cos{2\pi(f_c)t};
     \end{align*}
     $$
-    - ###### AM radio
+    - ###### AM RADIO
     $$
     \begin{align*}
     \underset{\text{baseband}}{x_z(t)}&=A\left(m(t)\right)\\
