@@ -12,8 +12,8 @@
     - ###### AM RADIO
     $$
     \begin{align*}
-    \underset{\text{baseband}}{x_z(t)}&=A\left(m(t)\right)\\
-    x_c(t)&=A\sqrt{2}m(t)\cos{2\pi(f_c)t};
+    \underset{\text{baseband}}{x_z(t)}&=A\left(1+a\:m(t)\right)\\
+    x_c(t)&=A\sqrt{2}\left(1+a\:m(t)\right)\cos{2\pi(f_c)t};
     \end{align*}
     $$
     where a is chosen so that 
