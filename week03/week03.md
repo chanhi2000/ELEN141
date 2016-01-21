@@ -76,7 +76,7 @@
     > - propagation range
 
 ## BACKWARD COMPATIBILITY
-- Delco radio story (**reflection**):
+- *Delco radio story* (**reflection**):
     - because of consumers and ads, we cannot remove it still.
     - however analog TV is gone (by deadline)!
     - **AM**: propagation
