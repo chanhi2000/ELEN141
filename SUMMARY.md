@@ -7,4 +7,5 @@
 * [week02](week02/week02.md)
 * [week03](week03/week03.md)
 * hw01a
+* hw01b
 
