@@ -98,8 +98,37 @@ $$
     \end{align*}
 $$
  - #### $$\hat{m}(t)$$
+
     - EXAMPLE: DSB vs. SSB
     if $$m(t)\in\mathbb{R}$$ , $$M(f)=\mathcal{F}{\left\{m(t)\right\}}=M^*(f)$$   
-    - $$\hat{m}(t)=\$$
+    - $$\underset{\text{Hilbert TF}}{\hat{m}(t)=\mathcal{H}{\left\{m(t)\right\}}}\$$
+    - $$\hat{M}(f)=-j\:\text{sgn}(f)M(f)$$ multiplying +f by (-j)
+    - $$\hat{m}(t)=\mathcal{F}^{-1}{\left\{\hat{M}(f)\right\}}=\mathcal{F}^{-1}{\{-j\:\text{sgn}(f)M(f)\}}$$
+
+- #### $$\text{sgn}(f)$$
+    - signum function (discontinuous)
     $$
+    \underset{\text{signum function}}{\text{sgn}(f)=\begin{cases}1&f>0\\0&f=0\\-1&f<0\end{cases}}
     $$
+######example#1
+    Let $$m(t)=\cos{(2\pi(440)t)}$$
+    $$
+    \begin{align*}
+    M(f)&=\mathcal{F}{\left\{m(t)\right\}}=\mathcal{F}{\left\{\cos{(2\pi(440)t)}\right\}}\\
+    &=\frac{1}{2}\left[\delta(f-440)+\delta(f+440)\right]\\
+    \left(-j\:\text{sgn}(f)\right)M(f)&=-\frac{j}{2}\left[\delta(f-440)-\delta(f+440)\right]\\
+    \therefore\hat{m}(t)&=\sin{(2\pi(440)t)}
+    \end{align*}
+    $$
+######example#2
+Let $$m(t)=\text{sinc}{(t)}$$
+    $$
+    \begin{align*}
+    M(f)&=\mathcal{F}{\left\{m(t)\right\}}=\mathcal{F}{\left\{\text{sinc}{(t)}\right\}}=\sqcap{(f)}\\
+    \left(-j\:\text{sgn}(f)\right)M(f)&=-j\sqcap{\left(\frac{f-\frac{1}{4}}{\frac{1}{2}}\right)}+j\sqcap{\left(\frac{f+\frac{1}{4}}{\frac{1}{2}}\right)}\\
+    \therefore\hat{m}(t)&=-j2\:\text{sinc}{(2t)}e^{j\frac{2\pi{t}}{4}}+j2\:\text{sinc}{(2t)}e^{-j\frac{2\pi{t}}{4}}\\
+    &=(2\text{sinc}(2t))-j\left(e^{j\frac{2\pi{t}}{4}}-e^{-j\frac{2\pi{t}}{4}}\right)\\
+    &=4\text{sinc}{(2t)}\left(\sin{\left(\frac{2\pi{t}}{4}\right)}\right)
+    \end{align*}
+    $$
+######example#2
