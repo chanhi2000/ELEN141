@@ -6,14 +6,16 @@
     $$
     \begin{align*}
     \underset{\text{baseband}}{x_z(t)}&=Am(t)\\
-    x_c(t)&=A\sqrt{2}m(t)\cos{2\pi(f_c)t};
+    \underset{\text{passband}}{x_c(t)}&=A\sqrt{2}m(t)\cos{2\pi(f_c)t};\\
+    X_c(f)&=\frac{\sqrt{2}}{2}AM(f-f_c)+\frac{\sqrt{2}}{2}AM(f+f_c);
     \end{align*}
     $$
-    - ###### AM RADIO
+    - ###### AM MODULATION (AM RADIO)
     $$
     \begin{align*}
     \underset{\text{baseband}}{x_z(t)}&=A\left(1+a\:m(t)\right)\\
-    x_c(t)&=A\sqrt{2}\left(1+a\:m(t)\right)\cos{2\pi(f_c)t};
+    \underset{\text{passbad}}{x_c(t)}&=A\sqrt{2}\left(1+a\:m(t)\right)\cos{2\pi(f_c)t};\\
+    X_c(f)&=\frac{\sqrt{2}}{2}A\left[\delta(f-f_c)+aM(f+f_c)+\delta(f+f_c)+aM(f+f_c)\right];
     \end{align*}
     $$
     where a is chosen so that 
@@ -70,6 +72,7 @@
 - #### ENVELOP DETECTOR (1920)
     - **full-wave** rectifier: negative -> positive
     - **half-wave** rectifier: take only positive 
+    - **purpose**: calculate the amplitude of cosine function (find the "envolop" of the signal).
     > **Q**:why do we still listen to AM radio?
     > - difficult to transfer (cost, effort)
     > - for consumers
@@ -101,7 +104,10 @@ $$
 
     - EXAMPLE: DSB vs. SSB
     if $$m(t)\in\mathbb{R}$$ , $$M(f)=\mathcal{F}{\left\{m(t)\right\}}=M^*(f)$$   
-    - $$\underset{\text{Hilbert TF}}{\hat{m}(t)=\mathcal{H}{\left\{m(t)\right\}}}\$$
+    - Hilbert Transform:
+    $$
+    \hat{m}(t)=\left(\frac{1}{\pi{t}}\right)*m(t)=\mathcal{H}{\left\{\hat{M}(f)\right\}}
+    $$
     - $$\hat{M}(f)=-j\:\text{sgn}(f)M(f)$$ multiplying +f by (-j)
     - $$\hat{m}(t)=\mathcal{F}^{-1}{\left\{\hat{M}(f)\right\}}=\mathcal{F}^{-1}{\{-j\:\text{sgn}(f)M(f)\}}$$
 
