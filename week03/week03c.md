@@ -40,14 +40,14 @@ $$
     \hat{M}(f)=-j\:\text{sgn}{(f)}\:M(f)
     \end{matrix}\right\}\\
     &=\frac{\sqrt{2}}{2}A\left[M(f-f_c)+M(f+f_c)\right]\mp\left(-j\frac{\sqrt{2}}{2}A\right)\left(-j\right)\left[\text{sgn}(f-f_c)M(f-f_c)-\text{sgn}(f+f_c)M(f+f_c)\right]\\
-    &=\left(\frac{\sqrt{2}}{2}A\right)\left[M(f-f_c)\left(1-\text{sgn}(f-f_c)\right)+M(f+f_c)\left(1+\text{sgn}(f+f_c)\right)\right];
+    &\mp\left(\frac{\sqrt{2}}{2}A\right)\left[M(f-f_c)\left(1-\text{sgn}(f-f_c)\right)+M(f+f_c)\left(1+\text{sgn}(f+f_c)\right)\right];
     \end{align*}
 $$
 $$
     \left\{
     \begin{matrix}
-    1+\text{sgn}(f)=\begin{cases}2&\text{if }f>0\\1&\text{if }f=0\\0&\text{if }f<0\end{cases};&&1+\text{sgn}(f-f_c)=\begin{cases}2&\text{if }f>0\\1&\text{if }f=0\\0&\text{if }f<0\end{cases};\\\\
-    1-\text{sgn}(f)=\begin{cases}0&\text{if }f>0\\1&\text{if }f=0\\2&\text{if }f<0\end{cases};&&1-\text{sgn}(f-f_c)=\begin{cases}0&\text{if }f>0\\1&\text{if }f=0\\2&\text{if }f<0\end{cases};
+    -1+\text{sgn}(f)=\begin{cases}0&\text{if }f>0\\-1&\text{if }f=0\\-2&\text{if }f<0\end{cases};&&-1+\text{sgn}(f-f_c)=\begin{cases}0&\text{if }f>0\\-1&\text{if }f=0\\-2&\text{if }f<0\end{cases};&&-1-\text{sgn}(f+f_c)=\begin{cases}-2&\text{if }f>0\\-1&\text{if }f=0\\0&\text{if }f<0\end{cases};\\\\
+    1-\text{sgn}(f)=\begin{cases}0&\text{if }f>0\\1&\text{if }f=0\\2&\text{if }f<0\end{cases};&&1-\text{sgn}(f-f_c)=\begin{cases}0&\text{if }f>0\\1&\text{if }f=0\\2&\text{if }f<0\end{cases};&&1+\text{sgn}(f+f_c)=\begin{cases}2&\text{if }f>0\\1&\text{if }f=0\\0&\text{if }f<0\end{cases};
     \end{matrix}\right\}
 $$
 ######example#1
