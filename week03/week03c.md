@@ -32,7 +32,6 @@ $$
     \underset{\text{baseband}}{x_z(t)}&=A\:m(t)+j(A\:\hat{m}(t));
     \end{align*}
 $$
-
 $$
     \begin{align*}
     X_c(f)&=\frac{\sqrt{2}}{2}A\left[M(f-f_c)+M(f+f_c)\right]\mp\left(-j\frac{\sqrt{2}}{2}\right)A\left[\hat{M}(f-f_c)-\hat{M}(f+f_c)\right]\\
@@ -51,4 +50,10 @@ $$
     1-\text{sgn}(f)=\begin{cases}0&\text{if }f>0\\1&\text{if }f=0\\2&\text{if }f<0\end{cases};&&1-\text{sgn}(f-f_c)=\begin{cases}0&\text{if }f>0\\1&\text{if }f=0\\2&\text{if }f<0\end{cases};
     \end{matrix}\right\}
 $$
+######example#1
+Let's suppose our $$m(t)$$ to be a *triangle* function. 
+- one half of the bandwidth is occupied by the **upper sideband** (USB) 
+- other half of the bandwidth is occupied by the **lower sideband** (LSB)
+as shown in figure below
 
+![figure](week03/img/[ELEN141]week03c-figure01.md)
