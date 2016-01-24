@@ -56,4 +56,4 @@ Let's suppose our $$m(t)$$ to be a *triangle* function.
 - other half of the bandwidth is occupied by the **lower sideband** (LSB)
 as shown in figure below
 
-![figure01]([ELEN141]week03c-figure01.png)
+![figure01](img/[ELEN141]week03c-figure01.png)
