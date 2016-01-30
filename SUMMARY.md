@@ -16,5 +16,5 @@
 * [week03c](week03/week03c.md)
 * [q01](week01/q01.md)
 * [q01a](week01/q01/q01a.md)
-* q01b
+* [q01b](week01\q01\q01b.md)
 
