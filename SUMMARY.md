@@ -15,13 +15,14 @@
        * [q01d](week01/q01/q01d.md)
        * [q01e](week01/q01/q01e.md)
 * [week02](week02/week02.md)
+    * [q02](week02/q02.md)
+        * [q02a](week02/q02/q02a.md)
+        * [q02b](week02/q02/q02b.md)
+        * [q02c](week02/q02/q02c.md) 
 * [week03](week03/week03.md)
    * [q03](week03/q03.md)
        * [q03a](week03/q03/q03a.md)
        * [q03b](week03/q03/q03b.md)
 * [week03c](week03/week03c.md)
-* [q02](week02/q02.md)
-* [q02a](week02/q02/q02a.md)
-* [q02b](week02/q02/q02b.md)
-* [q02c](week02/q02/q02c.md)
+
 
