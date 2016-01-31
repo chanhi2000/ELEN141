@@ -23,4 +23,5 @@
 * [q02](week02/q02.md)
 * [q02a](week02/q02/q02a.md)
 * [q02b](week02/q02/q02b.md)
+* q02c
 
