@@ -27,5 +27,5 @@
 * [week04a](week04/week04a.md)
 * [week04b](week04/week04b.md)
 * [mt](mt/README.md)
-* q04
+* [q04](week04/q04.md)
 
