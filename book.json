@@ -1,5 +1,5 @@
 {
-    "plugins": ["mathjax"],
+    "plugins": ["mathjax", "js-sequence-diagram", "gitbook-grviz"],
     "links": {
         "sidebar": {
             "Contact us / Support": "https://www.gitbook.com/contact"
@@ -10,5 +10,6 @@
     	"mathjax":{
     		"forceSVG": true
     	}
+
     }
 }

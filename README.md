@@ -203,7 +203,7 @@ You can insert a table of contents using the marker `[TOC]`:
 
 You can render *LaTeX* mathematical expressions using **MathJax**, as on [math.stackexchange.com][1]:
 
-    
+
 
 > enter code here
 
