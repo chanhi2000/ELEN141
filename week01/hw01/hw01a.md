@@ -1,7 +1,7 @@
 # **hw01a**
 
-##**2.1** 
-Let two complex numbers be given as 
+##**2.1**
+Let two complex numbers be given as
 $$
     \begin{align*}
     z_1&=x_1+jy_1=\alpha_1\exp{\left(j\theta_1\right)};\\

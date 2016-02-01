@@ -4,12 +4,12 @@
 Consider the two signals
 $$
     \begin{align*}
-    x_1(t)=m(t)\cos(2\pi{f_c}t)\\ 
+    x_1(t)=m(t)\cos(2\pi{f_c}t)\\
     x_2(t)=m(t)\sin(2\pi{f_c}t)
     \end{align*}
 $$
 
-where the bandwidth of m(t) is much less than fc. Compute the simplest form for the following four signals 
+where the bandwidth of m(t) is much less than fc. Compute the simplest form for the following four signals
 1. $$y_1(t)=x_1(t)\cos(2\pi{f_c}t)$$
 2. $$y_2(t)=x_1(t)\sin(2\pi{f_c}t)$$
 3. $$y_3(t)=x_2(t)\cos(2\pi{f_c}t)$$
