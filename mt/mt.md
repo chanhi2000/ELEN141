@@ -23,6 +23,7 @@ Consider the passband signal $$x_C(t)= A_cm(t)\sqrt{2}\cos{(2\pi {f_c}t)}−A_c\
 
 **(b)** Suppose $$m(t)=\text{sinc}{(t)}$$. Sketch the Fourier transform of $$x_C(t)$$.
 
+
 ##3.
 Let
 $$
@@ -36,6 +37,7 @@ $$.
 **(c)** Using Carson’s estimate fd such that the bandwidth of FM signal is 100 Hz.
 
 **(d)** Would the spectrum of this FM signal be smooth or spiky? Why or why not?
+
 
 ##4.
 Consider the signal $$m(t)=\cos{(2π100t)}$$.
