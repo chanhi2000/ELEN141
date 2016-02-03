@@ -33,17 +33,21 @@ Students will be able to:
 5. #### [Week 5](), Random processes continued, baseband/passband noise, Chapter 9-10
     - (a) Baseband/passband noise (b) Noise after filtering
     - (c) SNR
+
 6. #### [Week 6]() Introduction to Digital Communications, Chapter 8, Chapter 12
     - (a) Phase-locked loops
     - (b) Multiplexing
     - (c) Intro to Digital
+
 7. #### [Week 7]() Chapter 12
     - (a) Modulation
     - (b) Demodulation
     - (c) Energy and SNR
+
 8. #### [Weeks 8-9]() Optimal 1 bit Demodulation, Chapter 13
     - (a) Matched filter
     - (b) Design of a 1-bit digital system
     - (c) Minimum Bit-error-rate (BER) demodulation
     - (d) Midterm 2
+
 9. #### [Week 10](), modulating more than 1 bit, Chapter 14
