@@ -22,7 +22,10 @@
         * [hw02e](hw/hw02/hw02e.md)
         * [hw02f](hw/hw02/hw02f.md)
     * [hw03](hw/hw03.md)
-        
+        * [hw03a](hw/hw03/hw03a.md)
+        * [hw03b](hw/hw03/hw03b.md)
+        * [hw03c](hw/hw03/hw03c.md)
+        * [hw03d](hw/hw03/hw03d.md)      
 * [q](q/q.md)
     * [q01](q/q01.md)
         * [q01a](q/q01/q01a.md)
