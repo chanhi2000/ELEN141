@@ -1,7 +1,7 @@
 # **hw01c**
 
 ##**2.5**
-This problems exercises the signal and system tools. Compute the Fourier transform of 
+This problems exercises the signal and system tools. Compute the Fourier transform of
 
 1.
 $$
@@ -11,7 +11,7 @@ $$
 $$
     x(t)=\begin{cases}A\sin{\left(\frac{\pi{t}}{T_p}\right)}&0\geq{t}\geq{T_p}\\0&\text{elsewhere}\end{cases}
 $$
-and give the value of A such that $$E_u=1.$$ Compute the 40-dB relative bandwidth,$$B_{40}$$, of each signal. 
+and give the value of A such that $$E_u=1.$$ Compute the 40-dB relative bandwidth,$$B_{40}$$, of each signal.
 
 
 #### 2.5.1
@@ -26,7 +26,7 @@ $$
     G_x(f)&=\left|X(f)\right|^2=(T_P)^2(A)^2\text{sinc}^2{(T_pf)};
     \end{align*}
 $$
-When $$E_u=1$$, we want 
+When $$E_u=1$$, we want
 $$\int{x^2(t)dt}=1$$. It means
 $$
     \begin{align*}
@@ -87,7 +87,7 @@ $$
     &=\sqrt{\frac{T_p}{2}}\left[\underline{\text{sinc}{\left({T_p}\left(f-\frac{1}{2T_p}\right)\right)}}+\underline{\text{sinc}{\left({T_p}\left(f+\frac{1}{2T_p}\right)\right)}}\right]e^{-j2\pi\left(\frac{T_p}{2}\right)f}\\
     &=\cdots
     \end{align*}
-    
+
 $$
 Simplify those terms
 $$

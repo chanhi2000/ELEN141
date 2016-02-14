@@ -3,11 +3,11 @@
 ##3.
 **4.14**
 
-A commercial airliner is flying 15,000 feet above the ground and pointing its radar down to aid traffic control. A second plane is just leaving the runway as shown in **Figure 4.22**. The transmitted waveform is just a carrier tone, 
+A commercial airliner is flying 15,000 feet above the ground and pointing its radar down to aid traffic control. A second plane is just leaving the runway as shown in **Figure 4.22**. The transmitted waveform is just a carrier tone,
 $$x_z(t)=1$$
 or
 $$x_c(t)=\sqrt{2}\cos{(2\pi{f_c}t)}.$$
-The received signal return at the radar receiver input has the form 
+The received signal return at the radar receiver input has the form
 $$
 y_c(t)=A_P\sqrt{2}\cos{(2\pi(f_c+f_P)t+\theta_P)}+A_G\sqrt{2}\cos{(2\pi(f_c+f_G)t+θ_G)}
 $$

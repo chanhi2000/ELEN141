@@ -3,7 +3,7 @@
 ##4.
 **4.19**
 
-A bandpass signal has a complex envelope given as 
+A bandpass signal has a complex envelope given as
 $$
 x_z(t)=j\exp{\left[-j2\pi{f_m}t\right]}+3\exp{\left[j2\pi{f_m}t\right]}
 $$
