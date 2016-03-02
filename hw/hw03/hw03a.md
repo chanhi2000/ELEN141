@@ -13,7 +13,7 @@ For the energy spectrum shown in **Figure 2.14** find
 
 **(d)** 95% bandwidth,
 
-**(e)** The RMS bandwidth (note this is defined on page 2.32 **Problem 2.21** of Fitz)
+**(e)** The RMS bandwidth (note this is defined on page 2.32 **Problem 2.21** of *Fitz*)
 
 ![figure.01](hw03/hw03-fig01.png)
 

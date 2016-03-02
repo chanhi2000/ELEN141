@@ -14,7 +14,7 @@ $$
 
 **(c)** Compute $$P(X\leq0.4)$$.
 
-**(d)** Use rand in Matlab and produce 100 independent samples of a uniform random variable. How many of these 100 samples are less than or equal to 0.4? Does this coincide with the results you obtained in (c)?.
+**(d)** Use rand in MATLAB and produce 100 independent samples of a uniform random variable. How many of these 100 samples are less than or equal to 0.4? Does this coincide with the results you obtained in (c)?.
 
 > **NOTE**:
 

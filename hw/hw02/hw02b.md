@@ -14,7 +14,7 @@ $$
 
 **(c)** What is the 98% power bandwidth, $$B_{98}$$, of $$x(t)$$?
 
-**HINT**:  Use Matlab to plot the Fourier series, (use, say, 10 elements of the sum) to get an idea what this function is.
+**HINT**:  Use MATLAB to plot the Fourier series, (use, say, 10 elements of the sum) to get an idea what this function is.
 
 
 ####2(a)

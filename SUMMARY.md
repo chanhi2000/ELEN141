@@ -75,4 +75,11 @@
         * [mt01b](mt/mt01/mt01b.md)
         * [mt01c](mt/mt01/mt01c.md)
         * [mt01d](mt/mt01/mt01d.md)
-
+* [lab](lab/lab.md)
+    * [lab01](lab/lab01.md)
+    * [lab02](lab/lab02.md)
+    * [lab03](lab/lab03.md)
+    * [lab04](lab/lab04.md)
+    * [lab05](lab/lab05.md)
+    * [lab06](lab/lab06.md)
+    * [lab07](lab/lab07.md)
