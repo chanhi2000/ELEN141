@@ -1,7 +1,7 @@
 # mt02e
 
 ## 5.
-Given that capacity (the maximum achievable rate is) $$W\log_2{(1+\tet{SNR})}$$,
+Given that capacity (the maximum achievable rate is) $$W\log_2{(1+\text{SNR})}$$,
 
 **(a)** Which would you rather have in terms of bit rate, twice the bandwidth or twice the power? Justify your answer
 
