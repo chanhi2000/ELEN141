@@ -4,12 +4,12 @@
 Digital Modulation to Detect a Message
 
 
-##INTRODUCTION:
+## INTRODUCTION:
 In binary modulation schemes, the modulation process corresponds to switching (or keying) the amplitude, frequency or phase of the continuous-wave carrier between either of two values corresponding to binary symbols “0” or “1”. The three types of digital modulation are amplitude- shift keying (ASK), frequency-shift keying (FSK) and phase-shift keying (PSK).
 ![fig01](lab07/lab07-fig01.png)
 
 
-##OBJECTIVES:
+## OBJECTIVES:
 1. To model ASK, FSK and PSK modulation in MATLAB.
 2. To detect a message contained in the signal with Additive white Gaussian noise.
 
