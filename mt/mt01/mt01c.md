@@ -1,27 +1,13 @@
 # mt01c
 
-##3.
-Let
-$$
-m(t)=\sum_{k=1}^{3}{\cos{(2\pi5kt+\phi_k)}}
-$$.
+## 3.
+Consider the signal $$m(t)=4\cos{(2\pi{f}_mt)}$$.
 
-**(a)** Estimate the bandwidth of this signal.
+**(a)** Find a value for $$a$$ such that $$1+am(t)$$ is always positive.
 
-**(b)** Given an expression for the FM modulated signal.
+**(b)** For AM radio modulation why does $$1+am(t)$$ need to be positive?
 
-**(c)** Using Carson’s estimate fd such that the bandwidth of FM signal is 100 Hz.
+**(c)** Given your value of $$a$$, what percent of the transmit power is devoted to the message signal?
 
-**(d)** Would the spectrum of this FM signal be smooth or spiky? Why or why not?
+**(d)** Explain why we still use AM radio transmission even though it’s power inefficient.
 
-
-####3(a)
-
-
-####3(b)
-
-
-####3(c)
-
-
-####3(d)

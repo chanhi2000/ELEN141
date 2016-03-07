@@ -1,37 +1,16 @@
 # mt01a
+## 1.
+Consider $$x(t)=10\sqrt{2}\text{sinc}(t)\cos{(2\pi10^5t)}-10\sqrt{2}\text{sinc}{(t+1)}\sin{(2\pi10^5t)}$$ Assume $$f_c=10^5$$.
 
-# mt
+**(a)** Find the baseband equivalent signal, $$x_z(t)$$.
 
-##1.
-Consider $$x_C(t)=10\sqrt{2}\text{sinc}{(t10^3)}\cos{(2π10^5t)}$$. Assume $$f_c= 10^5$$.
+**(b)** Find the Fourier transform of $$x_z(t)$$.
 
-**(a)** Find the baseband equivalent signal, $$x_Z(t)$$.
+**(c)** Find the Fourier transform of $$x_c(t)$$.
 
-**(b)** Find the Fourier transform of $$x_Z(t)$$.
+**(d)** Find the energy of $$x_c(t)$$.
 
-**(c)** Find the Fourier transform of $$x_C(t)$$.
+**(e)** Plot the energy spectral density of $$x_z(t)$$.
 
-**(d)** Find the 90% bandwidth of $$x_Z(t)$$.
-
-**(e)** How does the bandwidth of $$x_Z(t)$$. compare to the bandwidth of $$x_C(t)$$?
-
-**(f)** Find the energy of $$x_C(t)$$.
-
-
-####1(a)
-
-
-####1(b)
-
-
-####1(c)
-
-
-####1(d)
-
-
-####1(e)
-
-
-####1(f)
+**(f)** Find the $$3\:\text{dB}$$ bandwidth of $$x_z(t)$$.
 
